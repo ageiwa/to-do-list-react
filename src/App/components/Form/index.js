@@ -4,8 +4,8 @@ import './style.css';
 const Form = () => {
     return(
         <form className="form">
-            <input type="text"></input>
-            <input type="submit"></input>
+            <textarea className="text"></textarea>
+            <input className="submit" type="submit"></input>
         </form>
     );
 }

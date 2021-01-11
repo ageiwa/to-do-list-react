@@ -1,4 +1,48 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999bb0;
+}
+
+.app {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-list {
+    display: flex;
+}
+
+.tab {
+    width: 100px;
+    height: 40px;
+    list-style: none;
+    color: #fff;
+    background-color: #383a47;
+    text-align: center;
+    line-height: 40px;
+    clip-path: polygon(0 10px, 10px 0, 90px 0, 100px 10px, 100px 40px, 0 40px);
+    cursor: pointer;
+}
+
+.active-tab {
+    background-color: #1f1f22;
+}
+
+.content {
+    flex: 1;
+    background-color: #383a47;
+    box-shadow: 0px 0px 8px 8px rgba(34, 60, 80, 0.2);
 }
