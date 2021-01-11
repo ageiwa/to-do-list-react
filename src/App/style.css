@@ -25,6 +25,10 @@ body {
     display: flex;
 }
 
+.tab-list a {
+    text-decoration: none;
+}
+
 .tab {
     width: 100px;
     height: 40px;
@@ -34,7 +38,6 @@ body {
     text-align: center;
     line-height: 40px;
     clip-path: polygon(0 10px, 10px 0, 90px 0, 100px 10px, 100px 40px, 0 40px);
-    cursor: pointer;
 }
 
 .active-tab {
