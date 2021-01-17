@@ -1,10 +1,11 @@
 import React from 'react';
+import Note from '../Note/index'
 import './style.css';
 
 const Form = () => {
     return(
         <div className="note-list">
-            <h1>Hello</h1>
+            <Note status="status await" title="Hello" />
         </div>
     );
 }

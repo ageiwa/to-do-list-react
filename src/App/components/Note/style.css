@@ -1,0 +1,54 @@
+.note {
+    margin-top: 20px;
+    width: 90%;
+    height: 75px;
+    background-color: #232529;/*5F9EA0*/
+}
+
+.note .header {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.note .status {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.note .done {
+    background-color: #3db64d;
+    box-shadow: 0px 0px 10px 5px rgba(61, 182, 77, 0.4);
+}
+
+.note .await {
+    background-color: #ddae2d;
+    box-shadow: 0px 0px 10px 5px rgba(221, 174, 45, 0.4);
+}
+
+.note .title {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.note .footer {
+    width: 100%;
+    height: 20px;
+    background-color: #151616;/*518C8E*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-arrow {
+    width: 15px;
+    height: 15px;
+    background-image: url(./icons/arrow-down.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}

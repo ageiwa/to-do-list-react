@@ -21,13 +21,13 @@ const App = () => {
             <HashRouter>
 
                 <ul className="tab-list">
-                    <NavLink to="/create"><li className="tab active-tab" onClick={(e) => switchWindow(e)}>Создать</li></NavLink>
-                    <NavLink to="/notes"><li className="tab" onClick={(e) => switchWindow(e)}>Заметки</li></NavLink>
+                    <NavLink to="/create"><li className="tab" onClick={(e) => switchWindow(e)}>Создать</li></NavLink>
+                    <NavLink to="/"><li className="tab active-tab" onClick={(e) => switchWindow(e)}>Заметки</li></NavLink>
                     <NavLink to="/done-notes"><li className="tab" onClick={(e) => switchWindow(e)}>Готовые</li></NavLink>
                 </ul>
                 <div className="content">
                     <Route path="/create" component={Form} />
-                    <Route path="/notes" component={NoteList} />
+                    <Route exact path="/" component={NoteList} />
                 </div>
 
             </HashRouter>
