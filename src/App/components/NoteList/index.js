@@ -9,7 +9,7 @@ const NoteList = (props) => {
         <div className="note-list">
             {
                 array.map((title, i) => {
-                    return <Note status="status await" title={title} key={i} />
+                    return <Note status="status await" title={title} desc={title} key={i} />
                 }) 
             }
         </div>
