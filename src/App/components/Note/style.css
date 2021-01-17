@@ -34,6 +34,11 @@
 .note .title {
     color: #fff;
     margin-left: 20px;
+    width: 80%;
+    height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .note .footer {
