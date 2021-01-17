@@ -2,10 +2,16 @@ import React from 'react';
 import Note from '../Note/index';
 import './style.css';
 
-const NoteList = () => {
+const NoteList = (props) => {
+    const array = props.notes;
+
     return(
         <div className="note-list">
-            <Note status="status await" title="Hello" />
+            {
+                array.map((title, i) => {
+                    return <Note status="status await" title={title} key={i} />
+                }) 
+            }
         </div>
     );
 }

@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
 
-const Form = () => {
-    const [notes, setNotes] = useState([]);
-
+const Form = (props) => {
     function handleSubmit(e) {
         e.preventDefault();
 
-        const newArray = notes;
-        newArray.push(e.target[0].value)
-        setNotes(newArray);
-
+        props.updateData(e.target[0].value);
         e.target[0].value = '';
     }
 
