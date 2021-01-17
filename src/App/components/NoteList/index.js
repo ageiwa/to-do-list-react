@@ -1,8 +1,8 @@
 import React from 'react';
-import Note from '../Note/index'
+import Note from '../Note/index';
 import './style.css';
 
-const Form = () => {
+const NoteList = () => {
     return(
         <div className="note-list">
             <Note status="status await" title="Hello" />
@@ -10,4 +10,4 @@ const Form = () => {
     );
 }
 
-export default Form;
+export default NoteList;
