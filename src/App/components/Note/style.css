@@ -52,9 +52,12 @@
     line-height: 25px;
     color: #fff;
     background-color: #1c1e22;
-    white-space: pre;
+    word-break: break-all;
+    white-space: pre-line;
     box-sizing: border-box;
     display: none;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .note .desc-active {
