@@ -9,22 +9,10 @@ const Note = (props) => {
         footNote.current.nextSibling.firstChild.classList.toggle('rotate-arrow');
     }
 
-    function completeNote(e) {
-        const status = e.target;
-        const note = status.parentElement.parentElement;
-
-        status.classList.remove('await');
-        status.classList.add('done');        
-
-        note.classList.add('note-swipe');
-
-        setTimeout(() => note.remove(), 400);
-    }
-
     return(
         <div className="note">
             <div className="header">
-                <div className={props.status} onClick={completeNote}></div>
+                <div className={props.status} onClick={props.handleClick}></div>
                 <p className="title">{props.title}</p>
             </div>
             <div className="desc" ref={footNote}>{props.desc}</div>
