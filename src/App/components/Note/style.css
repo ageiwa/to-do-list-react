@@ -4,6 +4,11 @@
     background-color: #232529;/*5F9EA0*/
 }
 
+.note-swipe {
+    margin-left: 1000px;
+    transition: .4s;
+}
+
 .note .header {
     padding-left: 15px;
     padding-right: 15px;
