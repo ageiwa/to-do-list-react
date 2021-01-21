@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {Route, NavLink, HashRouter} from 'react-router-dom';
 import Form from './components/Form/index';
 import NoteList from './components/NoteList/index';
+import DoneNoteList from './components/DoneNoteList/index';
 import './style.css';
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
                 <div className="content">
                     <Route path="/create" render={props => <Form updateData={updateNotes} />} />
                     <Route exact path="/" render={props => <NoteList notes={notes} updateData={updateDoneNotes} />} />
+                    <Route path="/done-notes" render={props => <DoneNoteList doneNotes={doneNotes} />} />
                 </div>
 
             </HashRouter>
