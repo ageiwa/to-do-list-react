@@ -26,7 +26,13 @@ body {
 }
 
 .tab-list a {
+    background-color: #383a47;
     text-decoration: none;
+    clip-path: polygon(0 10px, 10px 0, 90px 0, 100px 10px, 100px 40px, 0 40px);
+}
+
+.tab-list .active {
+    background-color: #1f1f22;
 }
 
 .tab {
@@ -34,14 +40,8 @@ body {
     height: 40px;
     list-style: none;
     color: #fff;
-    background-color: #383a47;
     text-align: center;
     line-height: 40px;
-    clip-path: polygon(0 10px, 10px 0, 90px 0, 100px 10px, 100px 40px, 0 40px);
-}
-
-.active-tab {
-    background-color: #1f1f22;
 }
 
 .content {
